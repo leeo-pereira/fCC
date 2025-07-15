@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #641220;
+}
+
+a:hover {
+    color: #e01e37;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right, #641220, #e01e37);
+}
+
+#main {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #fff0f3;
+}
+
+#title {
+    font-weight: 800;
+    font-size: 3rem;
+    text-shadow: -1px -1px 40px #e01e37;
+}
+
+#title,
+#sub-heading {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 4px 4px 8px lightgray;
+}
+
+#img-caption {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+#tribute-info {
+    max-width: 80%;
+    padding: 5px 30px 5px 30px;
+    margin: 0 auto;
+}
+
+#info-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#tribute-info li {
+    list-style-position: inside;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#tribute-info li:last-child {
+    margin-bottom: 0;
+}
+
+#tribute-info li::before {
+    content: "⇢ ";
+}
+
+#quote p:first-child::before {
+    content: "\275B ";
+    font-size: 3rem;
+}
+
+#quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 2.5rem;
+    background-color: #641220;
+    color: #fff0f3;
+    box-shadow: 4px 4px 8px lightgray;
+
+}
+
+#quote-author::before {
+    content: "⎯ ";
+}
+
+#quote-author::after {
+    content: " \275C";
+    font-size: 3rem;
+}
+
+#learn-more {
+    text-align: center;
+}
+

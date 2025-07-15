@@ -1,0 +1,48 @@
+body {
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px 200px;
+    background-image: linear-gradient(to right, #CDB4DB, rgb(255, 200, 221), lightpink, hsl(208, 97%, 87%), #A2D2FF);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    color: white;
+}
+
+.color-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.color1 {
+    background-color: #CDB4DB;
+}
+
+.color2 {
+    background-color: rgb(255, 200, 221);
+}
+
+.color3 {
+    background-color: lightpink;
+}
+
+.color4 {
+    background-color: hsl(208, 97%, 87%);
+}
+
+.color5 {
+    background-color: #A2D2FF;
+}

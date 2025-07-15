@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(to bottom, green, white);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to bottom, blue, white);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to bottom, yellow, white);
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, white, blue);
+}
+
+tr[class="read"] span[class="status"] {
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, white, green);
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, white, yellow);
+}
+
+span[class="status"], span[class^="rate"] {
+    height: 2rem;
+    width: 2rem;
+    padding: 2rem;
+}
+
+span[class^="rate"] > span {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 0, 242);
+}
+
+span[class~="one"] :nth-child(1) {
+  background-image: linear-gradient(to left, white, rgb(0, 234, 255));
+}
+
+span[class~="two"] :nth-child(1),
+span[class~="two"] :nth-child(2) {
+  background-image: linear-gradient(to left, black, rgb(0, 255, 123));
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(to left, brown, rgb(255, 0, 98));
+}

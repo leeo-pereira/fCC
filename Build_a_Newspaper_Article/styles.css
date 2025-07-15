@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 24px;
+    background-color: #e5e5e5;
+}
+
+.newspaper {
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    background-color: white;
+    padding: 20px;
+    margin: 100px 100px;
+    box-shadow: 2px 2px 3px 3px lightgray;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: Times New Roman, serif;
+    padding: 1.2rem;
+}
+
+.name, .date {
+    text-align: center;
+}
+
+.name, .author {
+    text-transform: uppercase;
+}
+
+.headline {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1rem 1rem 0.2rem 1rem;
+}
+
+.sub-headline {
+    font-weight: 100;
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 0.2rem 1rem 1rem 1rem;
+}
+
+.author {
+    font-weight: bold;
+    padding: 1rem;
+
+}
+
+.text {
+    text-indent: 20px;
+    line-height: 2em;
+    padding: 0 1rem;
+}
+
+.text::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+}

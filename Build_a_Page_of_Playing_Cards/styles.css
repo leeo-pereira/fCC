@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #2b2d42, #edf2f4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.naipe {
+    font-size: 4.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#playing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    height: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    padding: 0 10px;
+    box-shadow: 3px 3px 5px 2px gray;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.red {
+    color: red;
+}
