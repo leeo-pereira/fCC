@@ -1,0 +1,91 @@
+:root {
+    --color0: #dad7cd;
+    --color1: #a3b18a;
+    --color2: #588157;
+    --color3: #3a5a40;
+    --color4: #344e41;
+    --color5: #1b2822;
+    --solid-border: 2px solid black;
+    --dashed-border: 2px dashed black;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+    min-width: auto;
+    gap: 2rem;
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#legend-gradient {
+    width: 22ch;
+    height: 1rem;
+    margin: 10px;
+    background-image: linear-gradient(
+        90deg,
+        var(--color0) 0% 16.66%,
+        var(--color1) 16.66% 33.33%,
+        var(--color2) 33.33% 50%,
+        var(--color3) 50% 66.66%,
+        var(--color4) 66.66% 83.33%,
+        var(--color5) 83.33% 100%
+    );
+}
+
+.available-0 {
+    background-color: var(--color0);
+}
+
+.available-1 {
+    background-color: var(--color1);
+}
+
+.available-2 {
+    background-color: var(--color2);
+}
+
+.available-3 {
+    background-color: var(--color3);
+}
+
+.available-4 {
+    background-color: var(--color4);
+}
+
+.available-5 {
+    background-color: var(--color5);
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.sharp,
+.half {
+    height: 1.5rem;
+}
+
+td {
+    min-width: 9ch;
+}
+
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-bottom: var(--dashed-border);
+}
